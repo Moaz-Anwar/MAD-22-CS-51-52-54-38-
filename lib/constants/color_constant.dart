@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 class ColorConstant{
-  static Color  buttonColorZinc = Color.fromRGBO(55, 185, 197, 1);
+  static Color  buttonOrTextColorZinc = Color.fromRGBO(55, 185, 197, 1);
   // static Color  backgroundColor = fromHex('#E5E7EB');
 
   // static Color fromHex(String hexString) {
