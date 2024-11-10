@@ -2,8 +2,8 @@
 class Assets {
   Assets._();
 
+  static const String imagesOnboarding12Ellipse = 'assets/images/onboarding1&2Ellipse.svg';
   static const String imagesOnboarding1Box = 'assets/images/onboarding1Box.svg';
-  static const String imagesOnboarding1Ellipse = 'assets/images/onboarding1&2Ellipse.svg';
   static const String imagesOnboarding1Men = 'assets/images/onboarding1Men.svg';
   static const String imagesOnboarding2Women = 'assets/images/onboarding2Women.svg';
   static const String imagesOnboarding3Men = 'assets/images/onboarding3Men.svg';

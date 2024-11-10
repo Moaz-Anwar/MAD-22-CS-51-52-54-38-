@@ -4,13 +4,26 @@ import 'package:medicine_delivery/constants/app_strings.dart';
 import 'package:medicine_delivery/constants/app_style.dart';
 import 'package:medicine_delivery/constants/color_constant.dart';
 import 'package:medicine_delivery/constants/image_constant.dart';
-class SplashView extends StatelessWidget {
+import 'package:medicine_delivery/controllers/splash.dart';
+class SplashView extends StatefulWidget {
   const SplashView({super.key});
 
   @override
+  State<SplashView> createState() => _SplashViewState();
+}
+
+class _SplashViewState extends State<SplashView> {
+  SplashController splashController = SplashController();
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    splashController.onInit();
+  }
+  @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
-      body: Center(child: 
+      body: Center(child:
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
