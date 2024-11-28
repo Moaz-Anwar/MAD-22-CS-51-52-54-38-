@@ -9,10 +9,15 @@
       "client_info": {
         "mobilesdk_app_id": "1:3991273433:android:02c1a10e9154ccb147e3c8",
         "android_client_info": {
-          "package_name": "com.android.application"
+          "package_name": "com.medicine.medicine_delivery"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "3991273433-o43agj5n0mrh2s41dt9h0eps8k3j1ui4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBV2Z8PLfHQ0SEgtg26rA_3629h2Cm-TX8"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3991273433-o43agj5n0mrh2s41dt9h0eps8k3j1ui4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "3991273433-vp53nt81b5ih9o99au6g27ts79cn0kms.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.medicine.medicineDelivery"
+              }
+            }
+          ]
         }
       }
     }

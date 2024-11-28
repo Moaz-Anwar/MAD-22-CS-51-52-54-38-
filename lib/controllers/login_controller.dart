@@ -12,7 +12,7 @@ class LoginController {
     _auth
         .signInWithEmailAndPassword(
             email: email.text.toString(),
-            password: password.text.toString())
+            password: password.text.toString(),)
         .then((value) {
       Utils().toastMessage(context, value.user!.email.toString());
       Get.toNamed(AppRoutes.homeView);

@@ -5,6 +5,7 @@ class ImageConstant{
   static String onboarding1Box = 'assets/images/onboarding1Box.svg';
   static String onboarding2Women = 'assets/images/onboarding2Women.svg';
   static String onboarding3Men = 'assets/images/onboarding3Men.svg';
+  static String googleImage = 'assets/images/Icon.svg';
   // static String onboarding1Men = 'assets/images/onboarding1Men.svg';
   // static String onboarding1Men = 'assets/images/onboarding1Men.svg';
 }
