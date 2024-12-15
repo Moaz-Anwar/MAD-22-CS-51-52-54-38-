@@ -46,7 +46,7 @@ dependencies:
   flutter_toastr: ^1.0.3
   firebase_database: ^11.1.2
   shared_preferences: ^2.3.2
-
+  google_sign_in: ^6.2.0
 
 dev_dependencies:
   flutter_test:

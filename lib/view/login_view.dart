@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:medicine_delivery/controllers/login_controller.dart';
 import 'package:medicine_delivery/routes/app_routes.dart';
 import '../constants/image_constant.dart';
+import '../controllers/continue_google_controller.dart';
 import '../widgets/round_button.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -16,6 +17,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+
+  final AuthService _authService = AuthService();
+
 
   bool loading = false;
   final _formKey = GlobalKey<FormState>();
@@ -66,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               prefixIcon: Icon(Icons.email_outlined)),
                           validator: (value){
                             if (value!.isEmpty){
-                              return 'Enter password';
+                              return 'Enter Your Email Address';
                             }
                             return null;
                           },
@@ -98,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   loading: loading,
                   onPress: () {
                     if (_formKey.currentState!.validate()) {
-                      loginScreenController.login(context,passwordController,emailController);
+                      loginScreenController.login(context,emailController,passwordController);
                     }
                     },
                 ),
@@ -141,8 +145,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SizedBox(height: 10,),
                 InkWell(
-                  onTap: () {
-
+                  onTap: () async{
+                    final user = await _authService.signInWithGoogle();
+                    if (user != null) {
+                      print('Signed in as: ${user.displayName}');
+                    } else {
+                      print('Sign-In failed.');
+                    }
                   },
                   child: Container(
                     height: 50,
@@ -157,7 +166,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           SvgPicture.asset(ImageConstant.googleImage,
                             height: 30,),
                           SizedBox(width: 10,),
-                          Text('Continue with Gogle'),
+                          Text('Continue with Google'),
                         ],
                       ),
                     ),
