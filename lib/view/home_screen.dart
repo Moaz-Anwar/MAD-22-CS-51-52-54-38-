@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:medicine_delivery/routes/app_routes.dart';
-import 'package:medicine_delivery/view/bottom_nav_bar.dart';
 
 
 class HomeScreen extends StatefulWidget {
