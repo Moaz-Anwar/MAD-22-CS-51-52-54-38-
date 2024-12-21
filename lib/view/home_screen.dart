@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:medicine_delivery/routes/app_routes.dart';
+import 'package:medicine_delivery/view/search_view.dart';
+
+import '../controllers/bottom_nav_controller.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -39,6 +44,8 @@ class _HomeScreenState extends State<HomeScreen> {
     },
   ];
 
+  final BottomNavController _controller = Get.find();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,12 +85,15 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       child: Row(
-        children: const [
-          Icon(Icons.search, color: Colors.orangeAccent),
-          SizedBox(width: 8),
+        children: [
+          const Icon(Icons.search, color: Colors.orangeAccent),
+          const SizedBox(width: 8),
           Expanded(
             child: TextField(
-              decoration: InputDecoration(
+              onTap: () {
+                _controller.changePage(1);
+              },
+              decoration: const InputDecoration(
                 hintText: 'Search for medicines and products',
                 border: InputBorder.none,
               ),

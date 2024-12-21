@@ -2,8 +2,9 @@
 class Assets {
   Assets._();
 
-  static const String imagesGoogle = 'assets/images/Icon.svg';
-  static const String imagesOnboarding1 = 'assets/images/onboarding1&2Ellipse.svg';
+  static const String assetsUpdatedMedicinesWithUpdatedCompanies = 'assets/updated_medicines_with_updated_companies.json';
+  static const String imagesIcon = 'assets/images/Icon.svg';
+  static const String imagesOnboarding12Ellipse = 'assets/images/onboarding1&2Ellipse.svg';
   static const String imagesOnboarding1Box = 'assets/images/onboarding1Box.svg';
   static const String imagesOnboarding1Men = 'assets/images/onboarding1Men.svg';
   static const String imagesOnboarding2Women = 'assets/images/onboarding2Women.svg';
