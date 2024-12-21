@@ -12,7 +12,20 @@
           "package_name": "com.medicine.medicine_delivery"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "521359123666-im54jli609ckoekakq00u2te8udg8stt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medicine.medicine_delivery",
+            "certificate_hash": "5cde319766c99ff8a8ea7c95047d4282fd9f6024"
+          }
+        },
+        {
+          "client_id": "521359123666-1snnce7vjhfchuupbn9ps10gdd1p0m0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAHTv4ACeg62kRQlVv-hSG1sLVNJKJrp3w"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521359123666-1snnce7vjhfchuupbn9ps10gdd1p0m0e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "521359123666-m7it3s9ugitddb60k9csgf44jhsak6rg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.medicine.medicineDelivery"
+              }
+            }
+          ]
         }
       }
     }

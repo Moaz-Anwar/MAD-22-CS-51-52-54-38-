@@ -149,6 +149,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     final user = await _authService.signInWithGoogle();
                     if (user != null) {
                       print('Signed in as: ${user.displayName}');
+                      Get.toNamed(AppRoutes.bottomNavigation);
                     } else {
                       print('Sign-In failed.');
                     }
