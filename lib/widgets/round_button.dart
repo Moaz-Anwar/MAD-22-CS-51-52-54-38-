@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicine_delivery/constants/color_constant.dart';
 
 
 
@@ -32,7 +33,7 @@ class RoundButton extends StatelessWidget {
         ),
         child: loading ?
         Center(child: CircularProgressIndicator()) :
-        Center(child: Text(title,style: Theme.of(context).textTheme.titleMedium!.copyWith(color: Colors.white),),),
+        Center(child: Text(title,style: Theme.of(context).textTheme.titleMedium!.copyWith(color: ColorConstant.whiteColor),),),
       ),
     );
   }

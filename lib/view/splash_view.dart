@@ -22,17 +22,20 @@ class _SplashViewState extends State<SplashView> {
   }
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold(
-      body: Center(child:
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgPicture.asset(ImageConstant.splashLogo),
-            Text(AppString.medMarket,
-              style: AppStyle.style28w700(
-                  color: ColorConstant.buttonOrTextColorZinc),)
-          ],
-        ),),
-    ));
+    return PopScope(
+      canPop: false,
+      child: SafeArea(child: Scaffold(
+        body: Center(child:
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset(ImageConstant.splashLogo),
+              Text(AppString.medMarket,
+                style: AppStyle.style28w700(
+                    color: ColorConstant.buttonOrTextColorZinc),)
+            ],
+          ),),
+      )),
+    );
   }
 }

@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:medicine_delivery/controllers/profile_controller.dart';
 import 'package:medicine_delivery/routes/app_routes.dart';
 
 import '../utils/utils.dart';
@@ -22,6 +23,9 @@ class LoginController {
             email: email.text.toString().trim(),
             password: password.text.toString().trim(),)
         .then((value) {
+      // Reinitialize ProfileController for the new user
+      Get.delete<ProfileController>();
+      Get.put(ProfileController());
       Utils().toastMessage(context, value.user!.email.toString());
       Get.toNamed(AppRoutes.bottomNavigation);
     }).onError((error, StackTrace) {

@@ -23,29 +23,32 @@ class BottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Obx(() => _pages[_controller.currentIndex.value]), // Observe current index
-      bottomNavigationBar: Obx(
-            () => BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.cyan,
-          unselectedItemColor: Colors.grey,
-          backgroundColor: Colors.white,
-          showSelectedLabels: true,
-          showUnselectedLabels: false,
-          iconSize: 25,
-          landscapeLayout: BottomNavigationBarLandscapeLayout.centered,
-          currentIndex: _controller.currentIndex.value,
-          onTap: (index) {
-            _controller.changePage(index); // Update the selected index
-          },
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-            BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: 'Cart'),
-            BottomNavigationBarItem(icon: Icon(Icons.favorite_outline), label: 'Favourite'),
-            BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: 'Profile'),
-          ],
+    return PopScope(
+      canPop: false,
+      child: Scaffold(
+        body: Obx(() => _pages[_controller.currentIndex.value]), // Observe current index
+        bottomNavigationBar: Obx(
+              () => BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
+            selectedItemColor: Colors.cyan,
+            unselectedItemColor: Colors.grey,
+            backgroundColor: Colors.white,
+            showSelectedLabels: true,
+            showUnselectedLabels: false,
+            iconSize: 25,
+            landscapeLayout: BottomNavigationBarLandscapeLayout.centered,
+            currentIndex: _controller.currentIndex.value,
+            onTap: (index) {
+              _controller.changePage(index); // Update the selected index
+            },
+            items: const [
+              BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: 'Home'),
+              BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+              BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: 'Cart'),
+              BottomNavigationBarItem(icon: Icon(Icons.favorite_outline), label: 'Favourite'),
+              BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: 'Profile'),
+            ],
+          ),
         ),
       ),
     );

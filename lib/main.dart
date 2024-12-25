@@ -20,16 +20,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      return
-       GetMaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyan),
-            useMaterial3: true,
-            fontFamily: 'Rale way',
+       PopScope(
+         canPop: false,
+         child: GetMaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Pharma Door',
+            theme: ThemeData(
+              colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyan),
+              useMaterial3: true,
+              fontFamily: 'Rale way',
+            ),
+            getPages: AppRoutes.pages,
           ),
-          getPages: AppRoutes.pages,
-        );
+       );
   }
 }
 

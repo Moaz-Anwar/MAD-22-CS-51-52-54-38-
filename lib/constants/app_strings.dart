@@ -1,3 +1,39 @@
 class AppString{
   static String get medMarket => "Medmarket";
+  static String get cart => "Cart";
+  static String get details => "Medicine Details";
+  static String get onboard1BoldText => "Buy medications online";
+  static String get onboard1BodyText => "Choose and buy the necessary medications without visiting the pharmacy.";
+  static String get onboard2BoldText => "Everything in one place.";
+  static String get onboard2BodyText => "Telemedicine, ordering medications or homeopathic remedies – everything is here.";
+  static String get onboard3BoldText => "Fast delivery from 15 minutes.";
+  static String get onboard3BodyText => "We will deliver your medications quickly. Couriers use protective equipment";
+  static String get next => "Next";
+  static String get previous => "Previous";
+  static String get Profile => "Profile";
+  static String get Search => "Search";
+  static String get MoawazAlvi => "Moawaz Alvi";
+  static String get Edit => "Edit contact details";
+  static String get username => "user name : moawazalvi";
+  static String get email => "email : moawazalvi@gmail.com";
+  static String get password => "password : ..........";
+  static String get city => "City : Faisalabad";
+  static String get contact => "contact : 0303_4910237";
+  static String get search => "Search for the medicines";
+  static String get searchDecp => "You have not searched any medicine yet";
+  static String get Favourite => "Favourite";
+  static String get Favouritelist  => "The favorites list is empty";
+  static String get favouritedecp  => " Add items to favorites \n find items and click the heart!";
+  static String get Selections => "Selections";
+  static String get Medicines => "Medicines";
+  static String get VitaminsandSupplements => "Vitamins and Supplements";
+  static String get SpecialOffers => "Special Offers";
+  static String get Hygiene => "Hygiene";
+  static String get PetSupplies => "Pet Supplies";
+  static String get Beauty => "Beauty";
+  static String get COVID => "COVID-19 Protection Products";
+  static String get Contraception => "Contraception";
+  static String get noNetworkConnection => "No network connection";
+  static String get tryAgainLater => "Please try again later";
+
 }

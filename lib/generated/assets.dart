@@ -3,12 +3,21 @@ class Assets {
   Assets._();
 
   static const String assetsUpdatedMedicinesWithUpdatedCompanies = 'assets/updated_medicines_with_updated_companies.json';
+  static const String imagesArpelu = 'assets/images/arpelu.png';
+  static const String imagesCompeed = 'assets/images/compeed.png';
   static const String imagesIcon = 'assets/images/Icon.svg';
-  static const String imagesOnboarding12Ellipse = 'assets/images/onboarding1&2Ellipse.svg';
+  static const String imagesImg = 'assets/images/img.png';
+  static const String imagesImg1 = 'assets/images/img_1.jpg';
+  static const String imagesImg2 = 'assets/images/img_2.jpg';
+  static const String imagesMedi = 'assets/images/medi.png';
+  static const String imagesNurofen = 'assets/images/nurofen.png';
+  static const String imagesOnboarding12Ellipse = 'assets/images/onboarding12Ellipse.svg';
   static const String imagesOnboarding1Box = 'assets/images/onboarding1Box.svg';
   static const String imagesOnboarding1Men = 'assets/images/onboarding1Men.svg';
   static const String imagesOnboarding2Women = 'assets/images/onboarding2Women.svg';
   static const String imagesOnboarding3Men = 'assets/images/onboarding3Men.svg';
   static const String imagesSplashLogo = 'assets/images/splash_logo.svg';
+  static const String imagesTanlum = 'assets/images/tanlum.png';
+  static const String medicineDeliveryAssetsUpdatedMedicinesWithUpdatedCompanies = 'assets/updated_medicines_with_updated_companies.json';
 
 }

@@ -22,7 +22,7 @@ class _SignupScreenState extends State<SignupScreen> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final nameController = TextEditingController();
-  final confirmPasswordController = TextEditingController();
+  final phoneNoController = TextEditingController();
 
   SignupScreenController signupScreenController = SignupScreenController();
 
@@ -33,7 +33,7 @@ class _SignupScreenState extends State<SignupScreen> {
     super.dispose();
     emailController.dispose();
     passwordController.dispose();
-    confirmPasswordController.dispose();
+    phoneNoController.dispose();
     nameController.dispose();
   }
 
@@ -114,15 +114,15 @@ class _SignupScreenState extends State<SignupScreen> {
                         ),
                         TextFormField(
                           keyboardType: TextInputType.text,
-                          controller: confirmPasswordController,
+                          controller: phoneNoController,
                           obscureText: true,
                           decoration: InputDecoration(
-                            hintText: 'Confirm Password',
-                              labelText: 'Confirm Password',
-                              prefixIcon: Icon(Icons.lock_outline)),
+                            hintText: 'Phone No',
+                              labelText: 'Contact Number',
+                              prefixIcon: Icon(Icons.phone_outlined)),
                           validator: (value){
                             if (value!.isEmpty){
-                              return 'Re-Enter password';
+                              return 'Give your contat no';
                             }
                             return null;
                           },
@@ -135,7 +135,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   loading: loading,
                   onPress: () {
                     if(_formKey.currentState!.validate()){
-                      signupScreenController.signUp(context,emailController,passwordController);
+                      signupScreenController.signUp(context,emailController,passwordController,nameController,phoneNoController);
                     }
                   },
                 ),
