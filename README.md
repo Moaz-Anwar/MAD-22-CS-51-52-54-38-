@@ -1,4 +1,7 @@
-# MAD-22-CS-51-52-54-38-
+# MAD-22-CS-51-52-54-38
+
+                               **the files of the code is in the branch 'moazAnwar'**
+
  A medicine delivery app built with Flutter and GetX, using Firebase Firestore as the database. Features include user registration, medicine search, cart management, and prescription uploads. The app provides an intuitive interface for users to order medicines seamlessly while ensuring real-time data management.
 Medicine Delivery Mobile Application 🚑📱
 This project built using Flutter and GetX, designed to simplify the process of medicine delivery. The application enables users to search for medicines, view details, and place orders conveniently. It uses Firebase Firestore as the backend database to store and manage medicine-related data.
